@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:id="@+id/linear1"
+
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:paddingBottom="@dimen/activity_vertical_margin"
@@ -9,8 +13,84 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="practice.myproject.MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <Button
+        android:text="Hello"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
-</RelativeLayout>
+        android:id="@+id/button" />
+
+    <Button
+        android:text="Your name?"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/button2" />
+
+    <CheckBox
+        android:text="Java"
+        android:layout_width="171dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkBox" />
+
+    <CheckBox
+        android:text="Jsp"
+        android:layout_width="171dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkBox2" />
+
+    <CheckBox
+        android:text="Oracle"
+        android:layout_width="171dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkBox3" />
+
+    <Button
+        android:text="Subject Select"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/button3" />
+
+    <TextView
+        android:layout_width="353dp"
+        android:layout_height="wrap_content"
+        android:text="과목을 선택해주세요."
+        android:id="@+id/label" />
+
+    <RadioGroup
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/radioGroup">
+
+        <RadioButton
+            android:checked="true"
+            android:text="남자"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/radioButton"
+            android:layout_weight="1" />
+
+        <RadioButton
+            android:text="여자"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/radioButton2"
+            android:layout_weight="1" />
+    </RadioGroup>
+
+    <Button
+        android:text="Gender Select"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/button4" />
+
+    <TextView
+        android:text="성별을 선택해주세요"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/label2" />
+
+    <RatingBar
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/ratingBar" />
+</LinearLayout>
